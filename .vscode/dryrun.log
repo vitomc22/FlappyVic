@@ -1,0 +1,9 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/victor/FlappyVic'
+g++ -c -g -O0 -Wall -lsfml-graphics -lsfml-window -lsfml-system main.cpp -o main.o
+g++ -c -g -O0 -Wall -lsfml-graphics -lsfml-window -lsfml-system flappy.cpp -o flappy.o
+g++ -o a.out main.o flappy.o -g -O0 -Wall -lsfml-graphics -lsfml-window -lsfml-system
+rm *.o
+./a.out
+make: Leaving directory '/home/victor/FlappyVic'
+ 
